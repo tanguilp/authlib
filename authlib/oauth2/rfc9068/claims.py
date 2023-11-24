@@ -18,7 +18,7 @@ class JWTAccessTokenClaims(JWTClaims):
         self.validate_typ()
 
         super().validate(**kwargs)
-        self.validate_client_id()
+        #self.validate_client_id()
         self.validate_auth_time()
         self.validate_acr()
         self.validate_amr()
